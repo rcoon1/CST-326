@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.*;
 import java.util.*;
 
-@Table(name = "AUTH_USER_DETAILS")
+@Table(name = "USER_DETAILS")
 @Entity
 @Getter
 @Setter
