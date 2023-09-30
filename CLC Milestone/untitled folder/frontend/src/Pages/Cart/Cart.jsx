@@ -115,13 +115,13 @@ function Cart() {
                                                         <h5 className="card-title">{el.product.itemTitle}</h5>
                                                         <small className="text-primary fs-6">{el.product.category}</small>
                                                         <p className="card-text text-truncate">{el.product.description}</p>
-                                                        <p className="card-text"><small className="text-muted fw-bold ">Price : <span>{parseFloat(el.product.price).toFixed(2)}</span></small></p>
+                                                        <p className="card-text"><small className="text-muted fw-bold ">Price : $<span>{parseFloat(el.product.price).toFixed(2)}</span></small></p>
                                                     </div>
                                                 </div>
                                                 <div className="col-md-3">
                                                     <div className="card-body">
                                                         <h4 className="card-title">Total Price</h4>
-                                                        <p className="card-title"><span>{el.product.price}</span> * <span>{el.quantity}</span> = <span>{el.product.price * el.quantity}</span> </p>
+                                                        <p className="card-title"><span>${el.product.price}</span> * <span>{el.quantity}</span> = <span>{el.product.price * el.quantity}</span> </p>
                                                         <div className='d-flex align-items-center justify-content-between mb-4'>
                                                             <i role="button" onClick={() => decreseQuantity(el.product.id, el.quantity)} className={`fa fa-minus-circle  fs-3 ${el.quantity <= 1 ? "text-light" : "text-info"}`} aria-hidden="true"></i>
                                                             <span className='fs-2 text-center border border-4 rounded-3 w-50' >{el.quantity}</span>
@@ -138,7 +138,7 @@ function Cart() {
                             </div>
                             <div className="col-md-4 position-static top-10 bottom-0 ">
                                 <h1>Checkout</h1>
-                                <h5>Total price:  <span>{totalPrice}</span></h5>
+                                <h5>Total price:  $<span>{totalPrice}</span></h5>
                                 <p className='text-muted'>Delivery Address</p>
                                 <button className='btn btn-warning'>checkout</button>
                             </div>

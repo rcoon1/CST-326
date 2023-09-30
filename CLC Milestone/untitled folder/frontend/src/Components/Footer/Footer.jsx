@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-            <div className="bg-primary d-flex justify-content-between fw-bold text-white p-3 mt-5" >
+            <div className="bg-light d-flex justify-content-between fw-bold text-black p-3 mt-5" >
                 <div>
                     &copy;
                     <span> {new Date().getFullYear()}</span>

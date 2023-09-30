@@ -60,8 +60,6 @@ const Login = () => {
                 dispatch(authFailure('Something Wrong!Please Try Again'));
             }
         });
-        //console.log("Loading again",loading);
-
     }
     const handleChange = (e) => {
         e.persist();
@@ -87,7 +85,7 @@ const Login = () => {
 
     return (
         <div style={{ minHeight: "80vh" }} className='col-8 mx-auto'>
-            <button className='btn btn-warning ms-3 my-3' onClick={signup} >Signup</button>
+            <button className='btn btn-secondary ms-3 my-3' onClick={signup} >Signup</button>
             <form className=" gx-3 gy-2 align-items-center w-100 p-3" onSubmit={handleSubmit} noValidate={false}>
 
                 <div className="col-sm-6 mt-3">

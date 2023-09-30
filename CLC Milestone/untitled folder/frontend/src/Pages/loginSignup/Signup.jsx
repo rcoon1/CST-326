@@ -11,10 +11,9 @@ const Signup = () => {
         email: '',
         phoneNumber: '',
         city: '',
-        district: '',
         state: '',
-        pincode: '',
-        streetAndLandmark: '',
+        zipcode: '',
+        street: '',
         isAdmin: false
     }
     const history = useNavigate();
@@ -82,8 +81,8 @@ const Signup = () => {
                     <input type="number" className="form-control" id="phoneNumber" name='phoneNumber' value={userDetails.phoneNumber} onChange={inputHandler} placeholder='9453xxxxxx' />
                 </div>
                 <div className="col-12">
-                    <label htmlFor="streetAndLandmark" className="form-label">Street and Landmark</label>
-                    <input type="text" className="form-control" id="streetAndLandmark" placeholder="1234 Main St" name='streetAndLandmark' value={userDetails.streetAndLandmark} onChange={inputHandler} />
+                    <label htmlFor="street" className="form-label">Street </label>
+                    <input type="text" className="form-control" id="street" placeholder="1234 Main St" name='street' value={userDetails.street} onChange={inputHandler} />
                 </div>
 
                 <div className="col-md-6">
@@ -95,8 +94,8 @@ const Signup = () => {
                     <input type="text" className="form-control" id="state" name='state' placeholder='State' value={userDetails.state} onChange={inputHandler} />
                 </div>
                 <div className="col-md-6">
-                    <label htmlFor="pincode" className="form-label">Zipcode</label>
-                    <input type="text" className="form-control" id="pincode" name='pincode' placeholder='231001' value={userDetails.pincode} onChange={inputHandler} />
+                    <label htmlFor="zipcode" className="form-label">Zipcode</label>
+                    <input type="text" className="form-control" id="zipcode" name='zipcode' placeholder='12345' value={userDetails.zipcode} onChange={inputHandler} />
                 </div>
                 <div className="col-12">
                     <button type="submit" className="btn btn-primary">Sign up</button>
