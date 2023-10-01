@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DPE",
+    "\\DPE\\public",
+    "\\DPE\\src",
+    "\\DPE\\src\\Components",
+    "\\DPE\\src\\Components\\Navbar",
+    "\\DPE\\src\\Pages",
+    "\\DPE\\src\\Pages\\Homepage",
+    "\\DPE\\src\\Pages\\Product",
+    "\\DPE\\src\\redux"
+  ],
+  "SelectedNode": "\\DPE\\src\\Pages\\Homepage\\Homepage.jsx",
+  "PreviewInSolutionExplorer": false
+}
