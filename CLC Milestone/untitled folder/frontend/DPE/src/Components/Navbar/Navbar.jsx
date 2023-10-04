@@ -15,7 +15,7 @@ const Navbar = () => {
                     <>
 
                         <li className="nav-item mx-2">
-                            <span className='fs-4 text-secondary'><i className="fas fa-user fs-4 mx-1 text-warning"></i>{userName}</span>
+                            <span className='fs-4 text-secondary'><i className="fas fa-user fs-4 mx-1 text-warning"></i>{firstName}</span>
                         </li>
                         {roles && roles.filter(value => value.roleCode === 'ADMIN').length > 0 &&
                             <li className="nav-item mx-2">
